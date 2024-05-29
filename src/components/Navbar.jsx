@@ -15,20 +15,18 @@ export default function Navbar() {
         align-items: center;
         justify-content: space-evenly;
     `;
-    /*
-    const RouterLink = styled.Link`
-        text-decoration: none;
-        text-align: center;
-        font-size: 2rem;
-        font-family: Inconsolata;
+
+    const StyledLink = styled(Link)`
         color: white;
+        text-decoration: none;
+        font-size: 2em;
     `;
-    */
+
     return (
         <>
             <Bar>
-                <Link to="home">Home</Link>
-                <Link to="shop">Shop</Link>
+                <StyledLink to="home">HOME</StyledLink>
+                <StyledLink to="shop">SHOP</StyledLink>
             </Bar>
             <Outlet/>
         </>
