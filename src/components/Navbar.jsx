@@ -14,6 +14,7 @@ export default function Navbar() {
         position: absolute;
         align-items: center;
         justify-content: space-evenly;
+        box-shadow: 0px -10px 10px 10px black;
     `;
 
     const StyledLink = styled(Link)`
