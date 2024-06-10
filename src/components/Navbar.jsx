@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import '../styles/styles.css';
 import { Link, Outlet } from 'react-router-dom';
 
-export default function Navbar() {
-    const Bar = styled.div`
+const Bar = styled.div`
         width: 100%;
         background: #000000;
         margin: 0 auto;
@@ -17,11 +16,13 @@ export default function Navbar() {
         box-shadow: 0px -10px 10px 10px black;
     `;
 
-    const StyledLink = styled(Link)`
+const StyledLink = styled(Link)`
         color: white;
         text-decoration: none;
         font-size: 2em;
     `;
+
+export default function Navbar() {
 
     return (
         <>
