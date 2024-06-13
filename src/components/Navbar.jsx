@@ -2,6 +2,14 @@ import styled from 'styled-components';
 import '../styles/styles.css';
 import { Link, Outlet } from 'react-router-dom';
 
+const NavGrid = styled.div`
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    grid-auto-flow: column;
+    width: 100%;
+    text-align: center;
+`;
 const Bar = styled.div`
         width: 100%;
         background: #000000;
@@ -22,13 +30,17 @@ const StyledLink = styled(Link)`
         font-size: 2em;
     `;
 
+
 export default function Navbar() {
 
     return (
         <>
             <Bar>
-                <StyledLink to="home">HOME</StyledLink>
-                <StyledLink to="shop">SHOP</StyledLink>
+                <NavGrid>
+                    <StyledLink to="home">HOME</StyledLink>
+                    <StyledLink to="shop">SHOP</StyledLink>
+                    <p>Cart: 0</p>
+                </NavGrid>
             </Bar>
             <Outlet/>
         </>
