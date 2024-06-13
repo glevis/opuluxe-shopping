@@ -11,9 +11,9 @@ const Content = styled.div`
     `;
 
 const ItemGrid = styled.div`
-        margin-top: 20em;
+        margin-top: 55em;
         width: 80%;
-        height: 100%;
+        height: 150%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;

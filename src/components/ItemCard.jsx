@@ -5,6 +5,8 @@ const Card = styled.div`
         background-image: url(${props => props.$background});
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
     `;
 
 export default function ItemCard({image}) {
